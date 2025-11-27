@@ -1,0 +1,23 @@
+name: Python Smell Detector CI
+
+on: [push, pull_request]
+
+jobs:
+  check-smells:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: |
+          pip install pylint
+          
+      - name: Run Smell Detector on Demo File
+        run: |
+          # 运行核心检测脚本
+          python smelly_python/main.py smelly_demo.py
