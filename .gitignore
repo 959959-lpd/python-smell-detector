@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+# Keep package-lock.json if you want reproducible builds, but sometimes people ignore it. 
+# Standard is to keep it. I will keep it in the repo but ignore node_modules.
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.pdf
+
+.vscode-test/
