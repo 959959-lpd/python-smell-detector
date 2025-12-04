@@ -26,9 +26,16 @@ MANIFEST
 node_modules/
 npm-debug.log
 yarn-error.log
-package-lock.json
-# Keep package-lock.json if you want reproducible builds, but sometimes people ignore it. 
-# Standard is to keep it. I will keep it in the repo but ignore node_modules.
+# package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
 
 # VS Code
 .vscode/
@@ -43,3 +50,5 @@ package-lock.json
 *.pdf
 
 .vscode-test/
+
+vscode-extension/out/
